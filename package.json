@@ -1,5 +1,5 @@
 {
-  "name": "thunderboard-ble",
+  "name" : "node-red-contrib-thunderboard",
   "version": "0.1.2",
   "description": "A library to help reading/writing characteristic and service values with Silicon Labs Thunderboards using JSON configurations for quick and easy setup.",
   "main": "index.js",
@@ -41,5 +41,10 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "noble": ">=1.6.0"
-  }
+  },
+  "node-red" : {
+    "nodes": {
+        "thunderboard": "thundernode.js"
+    }
+  }  
 }
